@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;html lang="fr"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Quelle Winx es-tu ?&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fdf0ff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quiz-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: auto;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ff69b4;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>img {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="quiz-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Quelle Winx es-tu ?&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Réponds aux questions et découvre ton personnage !&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="quiz"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Question 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="question" id="q1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Si tu avais un pouvoir magique, ce serait...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(1, 'a')"&gt;☀️ Contrôler la lumière&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(1, 'b')"&gt;🔥 Maîtriser le feu&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(1, 'c')"&gt;🌿 Communiquer avec la nature&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(1, 'd')"&gt;🎶 Manipuler la musique&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(1, 'e')"&gt;🤖 Maîtriser la technologie&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(1, 'f')"&gt;🌊 Contrôler l’eau&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Question 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="question" id="q2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Quel est ton élément préféré ?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(2, 'a')"&gt;🔥 Le feu&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(2, 'b')"&gt;💧 L’eau&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(2, 'c')"&gt;🌬️ L’air&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(2, 'd')"&gt;🌿 La nature&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(2, 'e')"&gt;☀️ La lumière&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(2, 'f')"&gt;⚡ L’électricité&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Question 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="question" id="q3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Quel est ton passe-temps favori ?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(3, 'a')"&gt;🎉 Danser et faire la fête&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(3, 'b')"&gt;📚 Lire et apprendre&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(3, 'c')"&gt;🏃‍♀️ Faire du sport ou de l’aventure&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(3, 'd')"&gt;🎤 Chanter ou jouer de la musique&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(3, 'e')"&gt;🔧 Inventer et bricoler&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(3, 'f')"&gt;🦋 Profiter de la nature et des animaux&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Question 4 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="question" id="q4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Quelle série Netflix te correspond le plus ?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(4, 'a')"&gt;👽 Stranger Things&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(4, 'b')"&gt;⚔️ The Witcher&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(4, 'c')"&gt;👠 Emily in Paris&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(4, 'd')"&gt;👑 The Crown&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(4, 'e')"&gt;💻 Black Mirror&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(4, 'f')"&gt;🏝️ Outer Banks&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Question 5 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="question" id="q5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Si tu pouvais vivre dans un monde fantastique, ce serait...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(5, 'a')"&gt;🔥 Un royaume enflammé&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(5, 'b')"&gt;🧜‍♀️ Un palais sous-marin&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(5, 'c')"&gt;🧚‍♀️ Une forêt enchantée&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(5, 'd')"&gt;☁️ Un château flottant&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(5, 'e')"&gt;🤖 Une cité futuriste&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(5, 'f')"&gt;🌊 Une île paisible&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Question 6 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="question" id="q6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Quel est ton style vestimentaire ?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(6, 'a')"&gt;👗 Élégant et raffiné&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(6, 'b')"&gt;🧥 Casual et décontracté&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(6, 'c')"&gt;👚 Bohème et naturel&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(6, 'd')"&gt;🎤 Audacieux et créatif&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(6, 'e')"&gt;🤖 Futuriste et technologique&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(6, 'f')"&gt;🏖️ Décontracté et pratique&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Question 7 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="question" id="q7"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Comment réagirais-tu face à un danger ?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(7, 'a')"&gt;⚡ J'attaque de front !&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(7, 'b')"&gt;💧 Je cherche à m'échapper calmement&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(7, 'c')"&gt;🌿 Je me cache et je réfléchis à une solution&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="nextQuestion(7, 'd')"&gt;🔥 Je prends les devants pour résoudre le problème&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentQuestion = 1; // Commencer à la question 1</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function nextQuestion(questionNumber, answer) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Masquer la question actuelle</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById("q" + questionNumber).style.display = "none";</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Afficher la question suivante</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (questionNumber &lt; 7) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById("q" + (questionNumber + 1)).style.display = "block";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// À la dernière question, afficher un message de résultat</p>
+<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById("quiz").innerHTML = "&lt;h2&gt;Merci d'avoir répondu !&lt;/h2&gt;&lt;p&gt;Tu as terminé le quiz !&lt;/p&gt;";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Afficher la première question</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById("q1").style.display = "block";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
